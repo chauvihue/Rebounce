@@ -3,7 +3,7 @@
 <!-- HEADER STYLE: CLASSIC -->
 <div align="center">
 
-<img src="readmeai/assets/logos/purple.svg" width="30%" style="position: relative; top: 0; right: 0;" alt="Project Logo"/>
+<!-- <img src="readmeai/assets/logos/purple.svg" width="30%" style="position: relative; top: 0; right: 0;" alt="Project Logo"/> -->
 
 # <code>❯ rebounce</code>
 
@@ -12,10 +12,10 @@
 <!-- BADGES -->
 <!-- local repository, no metadata badges. -->
 
+<img src="readme_assets/game_screenshot.png" alt="Screenshot of the game">
 <img src="https://img.shields.io/badge/Status-WIP-yellow" alt="Work in Progress">
-<img src="https://img.shields.io/badge/Python-3.x-3776AB.svg?style=default&logo=Python&logoColor=white" alt="Python">
-<img src="https://img.shields.io/badge/pygame-2.x-3776AB.svg?style=default&logo=python&logoColor=white" alt="pygame">
-
+<img src="https://img.shields.io/badge/Python-3.11.x-3776AB.svg?style=default&logo=Python&logoColor=white" alt="Python">
+<!-- <img src="https://img.shields.io/badge/pygame-2.x-3776AB.svg?style=default&logo=python&logoColor=white" alt="pygame"> -->
 </div>
 <br>
 
@@ -43,7 +43,7 @@
 
 ## Overview
 
-⚠️ **Work in Progress**: This project is currently under active development and is NOT accepting contributions, forks, or pull requests at this time. This is a personal learning project.
+⚠️ **Work in Progress**: This is a personal learning project. This project is currently under development and is NOT accepting contributions, forks, or pull requests at this time. 
 
 **rebounce** is a pong-inspired arcade game that puts a unique spin on the classic paddle-and-ball formula. Instead of competing against an opponent, you defend against waves of bouncing balls that spawn from both sides of the screen. Each ball has a limited number of bounces (3-5) before it naturally expires, creating a dynamic and fast-paced gameplay experience.
 
@@ -90,7 +90,6 @@ You earn points when balls expire naturally after reaching their maximum bounce 
 
 ```sh
 └── /
-
     ├── assets
     │   ├── fonts
     │   └── sfx
@@ -120,20 +119,23 @@ You earn points when balls expire naturally after reaching their maximum bounce 
 			</thead>
 				<tr style='border-bottom: 1px solid #eee;'>
 					<td style='padding: 8px;'><b><a href='/framework.py'>framework.py</a></b></td>
-					<td style='padding: 8px;'>Provides utility functions for distance calculation and delta-time management for frame-rate independent physics</td>
+					<td style='padding: 8px;'>- Provides utility functions for distance calculation and delta-time management for frame-rate independent physics</td>
 				</tr>
 				<tr style='border-bottom: 1px solid #eee;'>
 					<td style='padding: 8px;'><b><a href='/main.py'>main.py</a></b></td>
-					<td style='padding: 8px;'>- This code initializes the game environment, handles user input, updates game state, and renders graphics<br>- It coordinates all game components, including physics, collision detection, and rendering<br>- The main loop processes events, updates game objects, and ensures smooth gameplay<br>- This central controller integrates with other modules for rendering, input handling, and game logic.</td>
+					<td style='padding: 8px;'>- Initializes the game environment, handles user input, updates game state, and renders graphics <br>
+					- Coordinates all game components, including physics, collision detection, and rendering <br>
+					- The main loop processes events, updates game objects, and ensures smooth gameplay <br>
+					- Integrates with other modules for rendering, input handling, and game logic.</td>
 				</tr>
 				<tr style='border-bottom: 1px solid #eee;'>
 					<td style='padding: 8px;'><b><a href='/menus.py'>menus.py</a></b></td>
 					<td style='padding: 8px;'>Implements pause menu system with semi-transparent overlay and input handling</td>
 				</tr>
-				<tr style='border-bottom: 1px solid #eee;'>
+				<!-- <tr style='border-bottom: 1px solid #eee;'>
 					<td style='padding: 8px;'><b><a href='/thinking.txt'>thinking.txt</a></b></td>
 					<td style='padding: 8px;'>- Manage dash animations by tracking positions and applying fade effects<br>- This approach efficiently handles the visual transition during dashes, ensuring smooth rendering and maintaining performance within the games rendering architecture.</td>
-				</tr>
+				</tr> -->
 			</table>
 		</blockquote>
 	</details>
@@ -147,7 +149,7 @@ You earn points when balls expire naturally after reaching their maximum bounce 
 
 This project requires the following dependencies:
 
-- **Programming Language:** Python 3.x
+- **Programming Language:** Python 3.11.x or bellow
 - **Game Engine:** pygame library
 - **Assets Structure:** The project requires an `assets` folder with:
   - `fonts/` subdirectory containing font files
@@ -158,20 +160,22 @@ This project requires the following dependencies:
 1. **Clone the repository:**
 
     ```sh
-    ❯ git clone <repository-url>
+    git clone https://github.com/chauvihue/Rebounce
     ```
 
 2. **Navigate to the project directory:**
 
     ```sh
-    ❯ cd Rebounce
+    cd Rebounce
     ```
 
 3. **Install the dependencies:**
 
     ```sh
-    ❯ pip install pygame
+    pip install pygame
     ```
+    
+    > ***Note***: Python 3.12.x and up is currently incompatible. You could alternatively build a virtual environment with Python 3.11
 
 ### Usage
 
